@@ -130,8 +130,8 @@ button {
   #contenedor-interno {
     background: rgba(224, 224, 224, 0.7);
     padding: 1vw;
-    max-width: 45vw;
-    min-height: 45vw;
+    max-width: 40vw;
+    min-height: 40vw;
     position: relative;
     display: flex;
     justify-content: center;
