@@ -130,15 +130,15 @@ button {
   #contenedor-interno {
     background: rgba(224, 224, 224, 0.7);
     padding: 1vw;
-    max-width: 40vw;
-    min-height: 40vw;
+    max-width: 30vw;
+    min-height: 30vw;
     position: relative;
     display: flex;
     justify-content: center;
   }
 
   button {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 
@@ -156,7 +156,6 @@ button {
 
   #contenedor-interno {
     background: rgba(224, 224, 224, 0.7);
-    border-radius: 2vw;
     padding: 1.5vw;
     max-width: 70vw;
     min-height: 70vw;
