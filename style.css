@@ -53,7 +53,7 @@ body::before{
 ul {
   border-radius: 1vw;
   padding: 1vw;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
   list-style: none;
 }
 
