@@ -7,8 +7,8 @@
 .grid-container {
     display: grid;
     gap: 1.5vw;
-    grid-template-columns: repeat(auto-fill, minmax(29vw, 1fr));
-    grid-auto-rows: minmax(29vw, auto);
+    grid-template-columns: repeat(auto-fill, minmax(38vw, 1fr));
+    grid-auto-rows: minmax(38vw, auto);
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 	background-attachment: fixed;
 	justify-content: center;
 	align-items: center;
-    	margin: 1.5vw;
+    margin: 1.5vw;
 }
 
 body::before{
@@ -37,14 +37,15 @@ body::before{
 
 .grid-items{
     width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
 ul {
-    border-radius: 1vw;
-    padding: 1vw;
+    border-radius: 2vw;
+    padding: 2vw;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -56,12 +57,40 @@ ul {
 
 /*Orientacion Horizontal*/
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
 
     .grid-container {
         gap: 1vw;
-        grid-template-columns: repeat(auto-fill, minmax(21.5vw, 1fr));
-        grid-auto-rows: minmax(21.5vw, auto);
+        grid-template-columns: repeat(auto-fill, minmax(22vw, 1fr));
+        grid-auto-rows: minmax(22vw, auto);
+    }
+
+    ul {
+        padding: 1.5vw;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 }
 
+/*Medias Queries Tablets*/
+
+/*Orientacion Vertical*/
+
+@media screen and (min-width: 712px) and (max-width: 1024px) and (orientation: portrait) {
+
+    .grid-container {
+        gap: 1vw;
+        grid-template-columns: repeat(auto-fill, minmax(26vw, 1fr));
+        grid-auto-rows: minmax(26vw, auto);
+    }
+}
+
+/*Orientacion Horizontal*/
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+
+    .grid-container {
+        gap: 1vw;
+        grid-template-columns: repeat(auto-fill, minmax(19vw, 1fr));
+        grid-auto-rows: minmax(19vw, auto);
+    }
+}
